@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💕 表白软件 💕</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hearts"></div>
+    
+    <!-- 背景音乐 -->
+    <audio id="backgroundMusic" loop autoplay muted preload="auto">
+        <source src="music/background.mp3" type="audio/mpeg">
+        <source src="music/background.wav" type="audio/wav">
+        您的浏览器不支持音频播放。
+    </audio>
+    
+    <!-- 音乐控制按钮 -->
+    <div class="music-control">
+        <button id="musicBtn" class="music-btn" onclick="toggleMusic()">
+            <span id="musicIcon">🎵</span>
+        </button>
+    </div>
+    
+    <div class="container">
+        <div class="image-container">
+            <img src="https://images.unsplash.com/photo-1518199266791-5375a83190b7?w=400&h=400&fit=crop&crop=faces" 
+                 alt="爱心图片" class="love-image" id="loveImage">
+        </div>
+        
+        <div class="confession-text" id="confessionText">
+            亲爱的，你愿意做我的女朋友吗？💕
+        </div>
+        
+        <div class="buttons-container">
+            <button class="btn btn-yes" id="yesBtn" onclick="clickYes()">
+                愿意 💕
+            </button>
+            <button class="btn btn-no" id="noBtn" onclick="clickNo()">
+                不愿意 😢
+            </button>
+        </div>
+        
+        <div class="success-message" id="successMessage">
+            耶！我们在一起啦！💕💕💕
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
